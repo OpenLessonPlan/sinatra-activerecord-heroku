@@ -2,6 +2,8 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require './config/environments' #database configuration
 require './models/model'        #Model class
+require './models/simplequestion'        #Model class
+
 
 get '/' do
 	erb :index
@@ -14,13 +16,13 @@ end
 post '/submit' do
 	@model = Model.new(params[:model])
 	if @model.save
-		redirect '/models'
+		redirect '/listall'
 	else
 		"Sorry, there was an error!"
 	end
 end
 
-get '/models' do
+get '/listall' do
 	@models = Model.all
 	erb :models
 end
