@@ -1,9 +1,65 @@
-<h3>All Questions</h3>
-<ul>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+<h1>All Questions</h1>
+<table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+    <tr>
+      <td>id</td>
+      <td>content_xml</td>
+      <td>answer</td>
+      <td>standard</td>
+      <td>grade</td>
+      <td>subject</td>
+      <td>level</td>
+      <td>source</td>
+      <td>question_type</td>
+      <td>question_part</td>
+      <td>parent_question</td>
+      <td>bloom_taxonomy</td>
+      <td>answer_length</td>
+      <td>rating</td>
+      <td>number_of_votes</td>
+      <td>is_parent</td>
+      <td>is_child</td>
+      <td>is_main</td>
+      <td>is_differentiated</td>
+      <td>main_question</td>
+      <td>is_derived</td>
+      <td>is_original</td>
+      <td>original_question</td>
+    </tr>
 <% @simplequestions.each do |question| %>
-	<li>
-		<%= question.id %>
-	</li>
+  <tr>
+    <td><%= question.id %></td>
+    <td><%= question.content_xml %></td>
+    <td><%= question.answer %></td>
+    <td><%= question.standard %></td>
+    <td><%= question.grade %></td>
+    <td><%= question.subject %></td>
+    <td><%= question.level %></td>
+    <td><%= question.source %></td>
+    <td><%= question.question_type %></td>
+    <td><%= question.question_part %></td>
+    <td><%= question.parent_question %></td>
+    <td><%= question.bloom_taxonomy %></td>
+    <td><%= question.answer_length %></td>
+    <td><%= question.rating %></td>
+    <td><%= question.number_of_votes %></td>
+    <td><%= question.is_parent %></td>
+    <td><%= question.is_child %></td>
+    <td><%= question.is_main %></td>
+    <td><%= question.is_differentiated %></td>
+    <td><%= question.main_question %></td>
+    <td><%= question.is_derived %></td>
+    <td><%= question.is_original %></td>
+    <td><%= question.original_question %></td>
+  </tr>
 <% end %>
-</ul>
+</table>
 <a href="/">Back to Home</a>
