@@ -7,6 +7,10 @@ get '/' do
 	erb :index
 end
 
+get '/admin' do
+	erb :admin
+end
+
 post '/submit' do
 	@model = Model.new(params[:model])
 	if @model.save
