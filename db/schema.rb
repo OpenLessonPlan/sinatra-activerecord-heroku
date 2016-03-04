@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160304010232) do
+ActiveRecord::Schema.define(version: 20160304061233) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20160304010232) do
     t.boolean  "is_main",                       null: false
     t.boolean  "is_differentiated",             null: false
     t.integer  "level",                         null: false
-    t.integer  "main_question",                 null: false
+    t.integer  "main_question"
     t.text     "answer"
     t.integer  "grade",                         null: false
     t.string   "subject",                       null: false
