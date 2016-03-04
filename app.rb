@@ -1,9 +1,8 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require './config/environments' #database configuration
-require './models/model'        #Model class
-require './models/simplequestion'        #Model class
-
+require './models/model'     #Model class
+require './models/simplequestion'    #Simplequestion class
 
 get '/' do
 	erb :index
