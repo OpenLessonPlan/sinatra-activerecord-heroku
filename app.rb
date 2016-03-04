@@ -3,6 +3,8 @@ require 'sinatra/activerecord'
 require './config/environments' #database configuration
 require './models/model'     #Model class
 require './models/simplequestion'    #Simplequestion class
+require './models/questionmap'    #Questionmap class
+
 
 get '/' do
 	erb :index
@@ -22,7 +24,7 @@ post '/submit' do
 end
 
 post '/addquestion' do
-	@question = SimpleQuestion.new(params[:model])
+	@question = SimpleQuestion.new(params[:simplequestion])
 	if @question.save
 		redirect '/listall'
 	else
