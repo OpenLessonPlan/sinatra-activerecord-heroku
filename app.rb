@@ -24,7 +24,7 @@ post '/submit' do
 end
 
 post '/addquestion' do
-	@question = SimpleQuestion.new(params[:simplequestion])
+	@question = Simplequestion.new(params[:simplequestion])
 	if @question.save
 		redirect '/listall'
 	else
@@ -33,7 +33,7 @@ post '/addquestion' do
 end
 
 get '/listall' do
-	@simplequestions = SimpleQuestion.all
+	@simplequestions = Simplequestion.all
 	erb :allquestions
 end
 
