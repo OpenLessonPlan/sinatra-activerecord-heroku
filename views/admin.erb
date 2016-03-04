@@ -1,5 +1,159 @@
-<h3>Hi Vibin and Lavanya :-)</h3>
-<form action="/submit" method="POST">
-	<input type="text" name="model[name]" value="Enter Model Name" />
+<h3></h3>
+<form action="/addquestion" method="POST">
+	<input type="text" name="model[name]" value="Enter " />
+	<br />
 	<input type="submit" value="Submit" />
+</form>
+
+
+
+
+<form action="/addquestion" method="POST">
+<div>
+	<h2>Hi Vibin and Lavanya :-)</h2>
+</div>						
+<ul>			
+	<li>
+		<label class="description required">Question in XML format (required)</label>
+		<div>
+			<textarea id="content_xml" name="content_xml"></textarea> 
+		</div> 
+	</li>
+    <li>
+		<label class="description" for="answer">Answer (optional)</label>
+		<div>
+			<textarea id="answer" name="answer"></textarea> 
+		</div> 
+	</li>		
+	<li>
+		<label class="description required">Common Core Standard (required)</label>
+		<div>
+			<select id="standard" name="standard"> 
+<option value="CCSS.MATH.CONTENT.7.RP.A.1" selected="selected">CCSS.MATH.CONTENT.7.RP.A.1</option>
+<option value="CCSS.MATH.CONTENT.7.RP.A.2">CCSS.MATH.CONTENT.7.RP.A.2</option>
+<option value="CCSS.MATH.CONTENT.7.RP.A.3">CCSS.MATH.CONTENT.7.RP.A.3</option>
+<option value="CCSS.MATH.CONTENT.7.NS.A.1">CCSS.MATH.CONTENT.7.NS.A.1</option>
+<option value="CCSS.MATH.CONTENT.7.NS.A.2">CCSS.MATH.CONTENT.7.NS.A.2</option>
+<option value="CCSS.MATH.CONTENT.7.NS.A.3">CCSS.MATH.CONTENT.7.NS.A.3</option>
+<option value="CCSS.MATH.CONTENT.7.EE.A.1">CCSS.MATH.CONTENT.7.EE.A.1</option>
+<option value="CCSS.MATH.CONTENT.7.EE.A.2">CCSS.MATH.CONTENT.7.EE.A.2</option>
+<option value="CCSS.MATH.CONTENT.7.EE.B.3">CCSS.MATH.CONTENT.7.EE.B.3</option>
+<option value="CCSS.MATH.CONTENT.7.EE.B.4">CCSS.MATH.CONTENT.7.EE.B.4</option>
+<option value="CCSS.MATH.CONTENT.7.G.A.1">CCSS.MATH.CONTENT.7.G.A.1</option>
+<option value="CCSS.MATH.CONTENT.7.G.A.2">CCSS.MATH.CONTENT.7.G.A.2</option>
+<option value="CCSS.MATH.CONTENT.7.G.A.3">CCSS.MATH.CONTENT.7.G.A.3</option>
+<option value="CCSS.MATH.CONTENT.7.G.B.4">CCSS.MATH.CONTENT.7.G.B.4</option>
+<option value="CCSS.MATH.CONTENT.7.G.B.5">CCSS.MATH.CONTENT.7.G.B.5</option>
+<option value="CCSS.MATH.CONTENT.7.G.B.6">CCSS.MATH.CONTENT.7.G.B.6</option>
+<option value="CCSS.MATH.CONTENT.7.SP.A.1">CCSS.MATH.CONTENT.7.SP.A.1</option>
+<option value="CCSS.MATH.CONTENT.7.SP.A.2">CCSS.MATH.CONTENT.7.SP.A.2</option>
+<option value="CCSS.MATH.CONTENT.7.SP.B.3">CCSS.MATH.CONTENT.7.SP.B.3</option>
+<option value="CCSS.MATH.CONTENT.7.SP.B.4">CCSS.MATH.CONTENT.7.SP.B.4</option>
+<option value="CCSS.MATH.CONTENT.7.SP.C.5">CCSS.MATH.CONTENT.7.SP.C.5</option>
+<option value="CCSS.MATH.CONTENT.7.SP.C.6">CCSS.MATH.CONTENT.7.SP.C.6</option>
+<option value="CCSS.MATH.CONTENT.7.SP.C.7">CCSS.MATH.CONTENT.7.SP.C.7</option>
+<option value="CCSS.MATH.CONTENT.7.SP.C.8">CCSS.MATH.CONTENT.7.SP.C.8</option>
+<option value="CCSS.MATH.CONTENT.8.NS.A.1">CCSS.MATH.CONTENT.8.NS.A.1</option>
+<option value="CCSS.MATH.CONTENT.8.NS.A.2">CCSS.MATH.CONTENT.8.NS.A.2</option>
+<option value="CCSS.MATH.CONTENT.8.EE.A.1">CCSS.MATH.CONTENT.8.EE.A.1</option>
+<option value="CCSS.MATH.CONTENT.8.EE.A.2">CCSS.MATH.CONTENT.8.EE.A.2</option>
+<option value="CCSS.MATH.CONTENT.8.EE.A.3">CCSS.MATH.CONTENT.8.EE.A.3</option>
+<option value="CCSS.MATH.CONTENT.8.EE.A.4">CCSS.MATH.CONTENT.8.EE.A.4</option>
+<option value="CCSS.MATH.CONTENT.8.EE.B.5">CCSS.MATH.CONTENT.8.EE.B.5</option>
+<option value="CCSS.MATH.CONTENT.8.EE.B.6">CCSS.MATH.CONTENT.8.EE.B.6</option>
+<option value="CCSS.MATH.CONTENT.8.EE.C.7">CCSS.MATH.CONTENT.8.EE.C.7</option>
+<option value="CCSS.MATH.CONTENT.8.EE.C.8">CCSS.MATH.CONTENT.8.EE.C.8</option>
+<option value="CCSS.MATH.CONTENT.8.F.A.1">CCSS.MATH.CONTENT.8.F.A.1</option>
+<option value="CCSS.MATH.CONTENT.8.F.A.2">CCSS.MATH.CONTENT.8.F.A.2</option>
+<option value="CCSS.MATH.CONTENT.8.F.A.3">CCSS.MATH.CONTENT.8.F.A.3</option>
+<option value="CCSS.MATH.CONTENT.8.F.B.4">CCSS.MATH.CONTENT.8.F.B.4</option>
+<option value="CCSS.MATH.CONTENT.8.F.B.5">CCSS.MATH.CONTENT.8.F.B.5</option>
+<option value="CCSS.MATH.CONTENT.8.G.A.1">CCSS.MATH.CONTENT.8.G.A.1</option>
+<option value="CCSS.MATH.CONTENT.8.G.A.2">CCSS.MATH.CONTENT.8.G.A.2</option>
+<option value="CCSS.MATH.CONTENT.8.G.A.3">CCSS.MATH.CONTENT.8.G.A.3</option>
+<option value="CCSS.MATH.CONTENT.8.G.A.4">CCSS.MATH.CONTENT.8.G.A.4</option>
+<option value="CCSS.MATH.CONTENT.8.G.A.5">CCSS.MATH.CONTENT.8.G.A.5</option>
+<option value="CCSS.MATH.CONTENT.8.G.B.6">CCSS.MATH.CONTENT.8.G.B.6</option>
+<option value="CCSS.MATH.CONTENT.8.G.B.7">CCSS.MATH.CONTENT.8.G.B.7</option>
+<option value="CCSS.MATH.CONTENT.8.G.B.8">CCSS.MATH.CONTENT.8.G.B.8</option>
+<option value="CCSS.MATH.CONTENT.8.G.C.9">CCSS.MATH.CONTENT.8.G.C.9</option>
+<option value="CCSS.MATH.CONTENT.8.SP.A.1">CCSS.MATH.CONTENT.8.SP.A.1</option>
+<option value="CCSS.MATH.CONTENT.8.SP.A.2">CCSS.MATH.CONTENT.8.SP.A.2</option>
+<option value="CCSS.MATH.CONTENT.8.SP.A.3">CCSS.MATH.CONTENT.8.SP.A.3</option>
+<option value="CCSS.MATH.CONTENT.8.SP.A.4">CCSS.MATH.CONTENT.8.SP.A.4</option>
+			</select>
+		</div>
+	</li>		
+    <li>
+		<label class="description required">Question Type (required)</label>
+		<div>
+			<select id="question_type" name="question_type"> 
+				<option value="Freeform" selected="selected">Freeform</option>
+				<option value="Multiple Choice">Multiple Choice</option>
+			</select>
+		</div> 
+	</li>		
+    <li>
+		<label class="description">Bloom's Taxonomy (optional)</label>
+		<div>
+			<select id="bloom_taxonomy" name="bloom_taxonomy"> 
+				<option value="" selected="selected"></option>
+				<option value="Apply">Apply</option>
+				<option value="Understand">Understand</option>
+				<option value="Remember">Remember</option>
+				<option value="Analyze">Analyze</option>
+				<option value="Evaluate">Evaluate</option>
+				<option value="Create">Create</option>
+			</select>
+		</div> 
+	</li>		
+    <li>
+		<label class="description required">Source (required)</label>
+		<div>
+			<input id="source" name="source" type="text" value="OLPP" required> 
+		</div>
+	</li>		
+    <li>
+		<label class="description">Answer Length (optional)</label>
+		<div>
+			<input id="answer_length" name="answer_length" type="text" maxlength="2" value=""> 
+		</div> 
+	</li>		
+    <li>
+		<label class="description required" for="question_part">Question Part (required), 0 = Parent Question, 1 = Part A, etc.</label>
+		<div>
+			<input id="question_part" name="question_part" type="text" maxlength="2" value="" required> 
+		</div> 
+	</li>		
+    <li>
+		<label class="description" for="parent_question">Parent Question ID (optional) </label>
+		<div>
+			<input id="parent_question" name="parent_question" type="text" maxlength="255" value=""> 
+		</div> 
+	</li>		
+    <li>
+		<label class="description" for="level">Difficulty Level (1-5) (required)</label>
+		<div>
+			<input id="level" name="level" type="text" maxlength="1" value="3" required> 
+		</div> 
+	</li>		
+    <li id="li_9">
+		<label class="description" for="grade">Grade (0-8, 0=Kindergarten) (required)</label>
+		<div>
+			<input id="grade" name="grade" type="text" maxlength="1" value="8"> 
+		</div> 
+	</li>		
+    <li>
+		<label class="description" for="subject">Subject (required)</label>
+		<div>
+			<select id="subject" name="subject"> 
+				<option value="Math" selected="selected">Math</option>
+				<option value="ELA">ELA</option>
+				<option value="Science">Science</option>
+			</select>
+		</div> 
+	</li>		
+</ul>
+		<input type="hidden" name="form_id" value="1109142">			    
+		<input class="button_text" type="submit" name="submit" value="Submit">        
 </form>

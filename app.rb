@@ -15,6 +15,15 @@ end
 post '/submit' do
 	@model = Model.new(params[:model])
 	if @model.save
+		redirect '/models'
+	else
+		"Sorry, there was an error!"
+	end
+end
+
+post '/addquestion' do
+	@question = SimpleQuestion.new(params[:model])
+	if @question.save
 		redirect '/listall'
 	else
 		"Sorry, there was an error!"
@@ -22,6 +31,11 @@ post '/submit' do
 end
 
 get '/listall' do
+	@simplequestions = SimpleQuestion.all
+	erb :allquestions
+end
+
+get '/models' do
 	@models = Model.all
 	erb :models
 end

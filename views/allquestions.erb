@@ -1,0 +1,9 @@
+<h3>All Questions</h3>
+<ul>
+<% @simplequestions.each do |question| %>
+	<li>
+		<%= question.content_xml %>
+	</li>
+<% end %>
+</ul>
+<a href="/">Back to Home</a>
