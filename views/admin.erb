@@ -4,6 +4,8 @@ body {
 }
 </style>
 
+<script src="http://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+
 <form action="/addquestion" method="POST">
     <div>
         <h2>Hi Vibin and Lavanya :-)</h2>
@@ -12,13 +14,24 @@ body {
         <li>
             <label class="description required">Question in XML format</label>
             <div>
-                <textarea rows="10" cols="100" id="simplequestion[content_xml]" name="simplequestion[content_xml]"></textarea> 
+                <textarea rows="10" cols="100" id="simplequestion[content_xml]" name="simplequestion[content_xml]"></textarea>
+                <script>
+                    // Replace the <textarea id="editor1"> with a CKEditor
+                    // instance, using default configuration.
+                    CKEDITOR.replace( 'simplequestion[content_xml]' );
+                </script>
             </div> 
         </li>
         <li>
             <label class="description" for="answer">Answer (optional)</label>
             <div>
                 <textarea rows="3" cols="100" id="simplequestion[answer]" name="simplequestion[answer]"></textarea> 
+                <script>
+                    // Replace the <textarea id="editor1"> with a CKEditor
+                    // instance, using default configuration.
+                    CKEDITOR.replace( 'simplequestion[answer]' );
+                </script>
+                
             </div> 
         </li>		
         <li>
